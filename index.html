@@ -2,111 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Akanksha | Chasing Stars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akanksha | Cosmic Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      padding: 0;
-      background: #0b0c10;
-      color: #f5f5f5;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+      color: #fff;
       overflow-x: hidden;
     }
-
-    .stars {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      box-shadow: 
-        0 0 1px #fff, 
-        200px 300px 1px #fff, 
-        400px 600px 1px #fff, 
-        800px 200px 1px #fff, 
-        1200px 700px 1px #fff;
-      z-index: 0;
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
     }
-
-    .container {
-      position: relative;
-      z-index: 1;
+    header h1 {
+      font-size: 2.8rem;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    .intro {
       max-width: 800px;
       margin: 0 auto;
-      padding: 100px 20px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+    section {
+      padding: 60px 20px;
       text-align: center;
     }
-
-    h1 {
-      font-size: 48px;
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #f8f8f8;
+    }
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-card {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255,255,255,0.1);
+    }
+    .project-card h3 {
+      font-size: 1.2rem;
       margin-bottom: 10px;
-      font-weight: 600;
+      color: #fff;
     }
-
-    p {
-      font-size: 20px;
-      color: #ccc;
-      margin-bottom: 40px;
-    }
-
-    blockquote {
-      font-size: 22px;
-      font-style: italic;
-      color: #a1c4fd;
-      margin: 40px auto;
-      max-width: 600px;
-    }
-
-    .projects a {
-      display: block;
-      margin: 20px auto;
-      padding: 12px 24px;
-      background: #1f2833;
-      color: #f5f5f5;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s;
-      max-width: 300px;
-    }
-
-    .projects a:hover {
-      background: #66fcf1;
-      color: #0b0c10;
-    }
-
     footer {
-      margin-top: 80px;
-      font-size: 14px;
-      color: #555;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
     }
-
+    .social a {
+      margin: 0 12px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Akanksha 🌌</h1>
+    <p class="intro">Craving the infinite, coding toward the stars, and crafting digital dreams in the silence of space. 🌙💻 </p>
+  </header>
 
-  <div class="stars"></div>
-
-  <div class="container">
-    <h1>Akanksha Shrinivas Dikonda 🌙</h1>
-    <p>Chasing Stars, One Dream at a Time ✨</p>
-
-    <blockquote>
-      “Somewhere, something incredible is waiting to be known.” — Carl Sagan
-    </blockquote>
-
+  <section>
+    <h2>✨ Projects</h2>
     <div class="projects">
-      <h2 style="margin-top:50px;">✨ Projects</h2>
-      <a href="https://github.com/akanksha-11185/rock-paper-scissors-lizard-spock" target="_blank">Rock Paper Scissors Lizard Spock 🎮</a>
+      <div class="project-card">
+        <h3>Rock Paper Scissors Lizard Spock</h3>
+        <p>A cosmic twist to the classic game. 🌠</p>
+      </div>
     </div>
+  </section>
 
-    <footer>
-      ✉️ akankshadikonda@gmail.com | 📸 @akanksha18.5
-    </footer>
-  </div>
-
+  <footer>
+    <div class="social">
+      <a href="https://github.com/Akanksha-11185" target="_blank">GitHub</a>
+      <a href="https://instagram.com/akanksha18.5" target="_blank">Instagram</a>
+    </div>
+    <p>Made with stardust ✨</p>
+  </footer>
 </body>
 </html>
+
 
