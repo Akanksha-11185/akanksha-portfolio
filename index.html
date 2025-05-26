@@ -46,12 +46,31 @@
       gap: 20px;
     }
     .project-card {
-      background: #111;
-      padding: 20px;
-      border-radius: 15px;
-      width: 250px;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+     body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background container */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px) brightness(0.5);
+  z-index: -1;
+  transform: scale(1.05); /* prevent edges showing on blur */
+}
+
     }
     .project-card:hover {
       transform: translateY(-5px);
