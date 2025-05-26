@@ -2,73 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Akanksha's Cosmic Portfolio 🚀✨</title>
+  <title>Akanksha | Chasing Stars 🚀</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1470290378698-263fa7ca0f9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
+      font-family: 'Orbitron', sans-serif;
       color: #fff;
-      text-align: center;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      overflow-x: hidden;
     }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      box-shadow: 
+        0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff, 
+        0 0 16px #0ff, 0 0 32px #0ff, 0 0 64px #0ff;
+      z-index: 0;
+      animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-1000px); }
+    }
+
     .container {
-      padding: 80px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      max-width: 800px;
-      margin: 50px auto;
-      border-radius: 20px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 100px 20px;
     }
+
     h1 {
-      font-size: 3rem;
-      color: #ffdd57;
+      font-size: 60px;
+      margin-bottom: 10px;
+      color: #00ffe7;
+      text-shadow: 0 0 20px #0ff;
     }
-    p {
-      font-size: 1.2rem;
-      margin: 20px 0;
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 40px;
     }
-    .button {
+
+    blockquote {
+      font-size: 24px;
+      font-style: italic;
+      color: #ffbbff;
+      margin: 30px auto;
+      max-width: 800px;
+    }
+
+    .projects {
+      margin-top: 60px;
+    }
+
+    .projects a {
       display: inline-block;
-      padding: 12px 25px;
       margin: 10px;
-      background-color: #00ffaa;
-      color: #000;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .button:hover {
-      background-color: #ff00d4;
+      padding: 12px 24px;
+      background: #ff00ff;
       color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
-    footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: #ccc;
+
+    .projects a:hover {
+      background: #00ffe7;
+      color: #000;
     }
+
   </style>
 </head>
 <body>
 
+  <div class="stars"></div>
+
   <div class="container">
-    <h1>🌌 Akanksha Shrinivas Dikonda 🌟</h1>
-    <p>Chasing Stars, Crafting Code, and Dreaming Big ✨🚀</p>
+    <h1>Akanksha Shrinivas Dikonda 🌙</h1>
+    <h3>Chasing Stars, One Dream at a Time 🚀</h3>
 
-    <a href="https://github.com/Akanksha-11185" target="_blank" class="button">GitHub</a>
-    <a href="#" class="button">LinkedIn</a>
-    <a href="#" class="button">Download Resume</a>
+    <blockquote>
+      “Somewhere, something incredible is waiting to be known.” — Carl Sagan
+    </blockquote>
 
-    <h2 style="margin-top:40px;">🚀 Projects</h2>
-    <p>✨ Portfolio Website<br>
-    ✨ Data Science Mini Projects<br>
-    ✨ AI Research Experiments</p>
+    <div class="projects">
+      <h2>✨ Projects</h2>
+      <a href="https://github.com/yourusername/rock-paper-scissors-lizard-spock" target="_blank">Rock Paper Scissors Lizard Spock 🎮</a>
+    </div>
 
-    <footer>© 2025 Akanksha's Cosmic Portfolio ✨ | Made with love & stardust 🌟</footer>
   </div>
 
 </body>
 </html>
-
